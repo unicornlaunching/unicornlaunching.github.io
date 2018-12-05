@@ -1,3 +1,5 @@
+<! --
+
 <!DOCTYPE html>
 <html>
 		
@@ -18,4 +20,113 @@
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 		</footer>
 	</body>
+</html>
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    text-align: center;
+
+   
+        position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    min-width: 100%; 
+    min-height: 100%;
+    padding: 20px;
+    margin: auto;
+    margin: auto;
+	width: 100%;
+  	padding: 10px;
+    
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    margin: auto;
+}
+
+.content {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    min-width: 100%; 
+    min-height: 100%;
+    padding: 20px;
+      text-align: center;
+    margin: auto;
+	width: 100%;
+  	padding: 10px;
+    margin: auto;
+}
+
+#myBtn {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+    margin: auto;
+	width: 50%;
+  	padding: 10px;
+      text-align: center;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+    margin: auto;
+      text-align: center;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="rain.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>UnicornLaunching</h1>
+  <p>UnicornLaunching Launches Unicorns Worth Launching.</p>
+  <button id="myBtn" onclick="location.href='http://www.linkedin.com/in/jagdeoholdings';">At-Traction Success</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
 </html>
