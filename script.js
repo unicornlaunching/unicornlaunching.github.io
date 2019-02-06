@@ -1,12 +1,13 @@
-
+"use strict";
+///////////////// worker thread code ///////////////////
 const theLastExperience = noWorkers => {
 	"use strict";
 	// ---- robot structure ----
 	const struct = {
 		points: [
 			{
-				x: 0,
-				y: -4,
+				x: 1,
+				y: -22,
 				f(s, d) {
 					this.y -= 0.01 * s * ts;
 				}
