@@ -1,5 +1,4 @@
-"use strict";
-///////////////// worker thread code ///////////////////
+
 const theLastExperience = noWorkers => {
 	"use strict";
 	// ---- robot structure ----
