@@ -3,23 +3,7 @@
 <head>
   
 <style>
-body, html {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-}
-
-canvas {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background:#000;
-	cursor: pointer;
-}
-	  
+  
 	  
     "use strict";
 ///////////////// worker thread code ///////////////////
@@ -509,6 +493,25 @@ window.addEventListener("mousedown", e => pointer.down(e), false);
 window.addEventListener("touchstart", e => pointer.down(e), false);
 window.addEventListener("mouseup", e => pointer.up(e), false);
 window.addEventListener("touchend", e => pointer.up(e), false);
+	}
+	
+body, html {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:#000;
+	cursor: pointer;
+}
+		
   </style>
   
   
