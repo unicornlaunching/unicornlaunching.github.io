@@ -2,13 +2,83 @@
 <html>
 <head>
       <meta http-equiv = "refresh" content = "0; url = https://serene-bartik-c34573.netlify.com/" />
+
+	
+	
 	<style>
 		
+body {
+	background: #fafafa;
+}
+
+.loader{
+	width: 300px;
+	hight: 300px;
+	position: absolute;
+	top: 50%
+	left: 50%
+	transforms: translate(-50%, -50%);
+}
+
+.loading-area div{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%
+box-sizing: border-box
+}
+
+.loading-area > div{
+	position: absolute;
+	left: calc(50% - 30px / 2);
+	top: 35%;
+}
+
+.loading-area div:not ([class^='box']){
+	animation: animate 1.9s ease infinite;
+background: #262626;
+}
+
+
+.box2{
+	transform: rotate(-150deg) translateY(-70px) rotate(-30deg);
+}
+
+.box2{
+	transform: rotate(150deg) translateY(-70px) rotate(-30deg);
+}
+
+@keyframes animate{
+	30%{
+	transform: translate(40px, 70px);
+}
+
+	30%{
+	transform: translate(-40px, 70px);
+}
+
+	100%{
+	transform: translate(0, 0);
+}
 		
 		
 	</style>
 	</head>
+	<div class = "loader leading-area">
+	<div class = "box2">
+		<div></dvi>
+	</div>
+		<div class = "box3">
+		<div></dvi>
+	</div>
+	
+	</div>
+	
+	
+	
   <h1>UnicornLaunching</h1>
+	
+	
+	
   <p>UnicornLaunching Launches Unicorns Worth Launching.</p>
 	<p>
   <button id="myBtn" onclick="location.href='https://www.youtube.com/watch?v=gwmTE9FflWE';">Unicorn Trending</button>
